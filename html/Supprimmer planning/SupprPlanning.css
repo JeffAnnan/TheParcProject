@@ -1,0 +1,28 @@
+#VotrePlanning{
+	text-align : center;
+	position : center;
+	border : solid;
+}
+
+table, th, td {
+	margin-top : 2%;
+  border: 1px solid black;
+}
+
+#ChoixSecteur{
+	position : center;
+	margin-top : 2%;
+	margin-left : 45%;
+}
+
+#ChoixEmploye{
+	position : center;
+	margin-top : 2%;
+	margin-left : 45%;
+}
+
+#Horaires,#Valider{
+	position : center;
+	margin-top : 1%;
+	margin-left : 45%
+}
