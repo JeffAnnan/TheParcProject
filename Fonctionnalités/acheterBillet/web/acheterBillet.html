@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>créer un client</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre.min.css">
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-exp.min.css">	
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-icons.min.css">
+</head>
+<body>
+  
+  <div class="col-5 col-mx-auto" id="all">
+    <div class="corner-ribbon top-right sticky blue"> Acheter Billet</div>
+    <h1 class="col-7 col-mx-auto">Achetez vos billets</h1>
+    <form class="form-horizontal">
+
+      <div class="form-group">
+        <div class="col-3 col-sm-12">
+          <h3>Le :</h3>
+        </div>
+        <div class="col-3 col-sm-12">
+          <div class="calendar" id="locateAndDate">
+        <!-- calendar navbar -->
+        <div class="calendar-nav navbar">
+          <button class="btn btn-action btn-link btn-lg">
+            <i class="icon icon-arrow-left"></i>
+          </button>
+          <div class="navbar-primary">Juin 2019</div>
+            <button class="btn btn-action btn-link btn-lg">
+              <i class="icon icon-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="calendar-container">
+          <div class="calendar-header">
+            <div class="calendar-date">Lun</div>
+            <div class="calendar-date">Mar</div>
+            <div class="calendar-date">Mer</div>
+            <div class="calendar-date">Jeu</div>
+            <div class="calendar-date">Ven</div>
+            <div class="calendar-date">Sam</div>
+            <div class="calendar-date">Dim</div>
+          </div>
+
+          <div class="calendar-body">
+            <!-- calendar previous month -->
+            <div class="calendar-date prev-month">
+              <button class="date-item">27</button>
+            </div>
+            <div class="calendar-date prev-month">
+              <button class="date-item">28</button>
+            </div>
+            <div class="calendar-date prev-month">
+              <button class="date-item">29</button>
+            </div>
+            <div class="calendar-date prev-month">
+              <button class="date-item">30</button>
+            </div>
+            <div class="calendar-date prev-month">
+              <button class="date-item">31</button>
+            </div>
+
+            <!-- calendar current month -->
+            <div class="calendar-date">
+              <button class="date-item">1</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">2</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">3</button>
+            </div>
+            <!-- calendar date: tooltip -->
+            <div class="calendar-date tooltip" data-tooltip="Today">
+              <button class="date-item date-today">4</button>
+            </div>
+            <!-- calendar date: not available -->
+            <div class="calendar-date">
+              <button class="date-item">5</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">6</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">7</button>
+            </div>
+            <div class="calendar-date tooltip calendar-range range-start calendar-range range-end" >
+              <button class="date-item">8</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">9</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">10</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">11</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">12</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">13</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">14</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">15</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">16</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">17</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">18</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">19</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">20</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">21</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">22</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">23</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">24</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">25</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">26</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">27</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">28</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">29</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">30</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+
+      <div class="form-group">
+        <div class="col-6 col-sm-12">
+          <div class="col-6 col-sm-12">
+          <h3>Participants : </h3>
+          <label class="form-label" for="input-example-19">Adultes (17+)</label>
+          <input type="number" id="tentacles" name="tentacles"
+       min="0" max="50">
+
+          <label class="form-label" for="input-example-19">Enfants (4-16)</label>
+          <input type="number" id="tentacles" name="tentacles"
+       min="0" max="50">
+
+        <label class="form-label" for="input-example-19">Adultes (- 5)</label>
+          <input type="number" id="tentacles" name="tentacles"
+       min="0" max="50">
+
+        
+        </div>
+
+        </div>
+        <div class="col-6 col-sm-12">
+          <div class="col-6 col-sm-12">
+          <h3> Vers l'étape suivante...</h3>
+          <div>
+            J'ai déjà un compte client
+            <button class="btn btn-primary">Continuer avec mon compte </button>
+          </div>
+          <br>
+          <div>
+            Je n'ai pas de compte
+            <button class="btn btn-primary">Etape suivante</button>
+          </div>
+        
+        </div>
+        </div>
+      </div>
+      
+    </form>
+  </div>
+  
+
+  
+  
+  
+</body>
+</html>
