@@ -1,169 +1,47 @@
 <!DOCTYPE html>
 <html>
 
-	<head> 
+	<head>  
 		<title>Consulter planning (secrétaire)</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="ConsulterPlanningSecretaire.css">
+		<link rel="stylesheet" type="text/css" href="css/ConsulterPlanningSecretaire.css">
+		<link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre.min.css">
+		<link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-exp.min.css">	
+		<link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-icons.min.css">
 	</head>
 	<body>
-		<div id="VotrePlanning">
-			<p> Sélectionner le planning à consulter Planning </p>
-		</div>
+		<div class="corner-ribbon top-right sticky blue"> Consulter planning</div>
+			<div id="VotrePlanning">
+				<h1 class="col-7 col-mx-auto">Sélectionner le secteur puis l'employé :</h1>
+			</div>
+			<br><br>
+		<form class="form-horizontal col-7 col-mx-auto">
+
+			<div class="form-group">
+				<div class="col-3 col-sm-12">
+				<label class="form-label" for="input-example-1">Choisissez le secteur :</label>
+				</div>
+				<select class="form-select col-9 col-sm-12">
+				<option>Animalier</option>
+				<option>Entretien</option>
+				<option>Restauration</option>
+				</select>
+			</div>
 		
-		<div id="ChoixSecteur">
-			<p> Choisissez le secteur :</p>
-			<select>
-				<option value="animalier">Animalier</option>
-				<option value="entretien">Entretien</option>
-				<option value="restauration">Restauration</option>
-				<option value="autres">Autres</option>
+			<div class="form-group">
+				<div class="col-3 col-sm-12">
+				<label class="form-label" for="input-example-1">Choisissez l'employé :</label>
+				</div>
+			<select class="form-select col-9 col-sm-12">
+			<option>Dupont Jean</option>
+			<option>Bonbeurre Jean</option>
+			<option>Dubreuil Jean</option>
 			</select>
-		</div>
-		
-		<div id="ChoixEmploye">
-			<p> Choisissez l'employé: </p>
-			<select>
-				<option value="dupont">Dupont Jean</option>
-				<option value="point">Point Clémentine</option>
-				<option value="bonbeurre">Bonbeurre Jean</option>
-			</select>
-		</div>
-		
-		
-		
-		<div id ="Planning">
-			<table style="width:100%">
-				<tr>
-					<th> h </th>
-					<th>Lundi</th>
-					<th>Mardi</th> 
-					<th>Mercredi</th>
-					<th>Jeudi</th>
-					<th>Vendredi</th>
-					<th>Samedi</th>
-					<th>Dimanche</th>
-				</tr>
-				<tr id="8h">
-					<td>8h </td>
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">...  </td> 
-					<td bgcolor="red">... </td>
-					<td>... </td>
-					<td bgcolor="red">...  </td> 
-					<td bgcolor="red">... </td>
-					<td>... </td>
-				</tr>
-				<tr id="9h">
-					<td>9h </td>
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">...  </td> 
-					<td bgcolor="red">... </td>
-					<td>... </td>
-					<td bgcolor="red">...  </td> 
-					<td bgcolor="red">... </td>
-					<td>... </td>
-				</tr>
-				<tr id="10h">
-					<td>10h </td>
-					<td>... </td>
-					<td bgcolor="red">...  </td> 
-					<td>... </td>
-					<td>... </td>
-					<td bgcolor="red">...  </td> 
-					<td bgcolor="red">... </td>
-					<td>... </td>
-				</tr>
-				<tr id="11h">
-					<td>11h </td>
-					<td>... </td>
-					<td bgcolor="red">...  </td> 
-					<td>... </td>
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">...  </td> 
-					<td>... </td>
-					<td>... </td>
-				</tr>
-				<tr id="12h">
-					<td>12h </td>
-					<td>... </td>
-					<td bgcolor="red">...  </td> 
-					<td>... </td>
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">...  </td> 
-					<td>... </td>
-					<td>... </td>
-				</tr>
-				<tr id="13h">
-					<td>13h </td>
-					<td>... </td>
-					<td bgcolor="red">...  </td> 
-					<td>... </td>
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">...  </td> 
-					<td>... </td>
-					<td>... </td>
-				</tr>
-				<tr id="14h">
-					<td>14h </td>
-					<td>... </td>
-					<td bgcolor="red">...  </td> 
-					<td>... </td>
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">...  </td> 
-					<td>... </td>
-					<td>... </td>
-				</tr>
-				<tr id="15h">
-					<td>15h </td>
-					<td>... </td>
-					<td bgcolor="red">...  </td> 
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">...  </td> 
-					<td>... </td>
-					<td>... </td>
-				</tr>
-				<tr id="16h">
-					<td>16h </td>
-					<td>... </td>
-					<td bgcolor="red">...  </td> 
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">...  </td> 
-					<td>... </td>
-					<td>... </td>
-				</tr>
-				<tr id="17h">
-				<td>17h </td>
-					<td>... </td>
-					<td bgcolor="red">...  </td> 
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">...  </td> 
-					<td>... </td>
-					<td>... </td>
-				</tr>
-				<tr id="18h">
-					<td>18h </td>
-					<td>... </td>
-					<td bgcolor="red">...  </td> 
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">...  </td> 
-					<td>... </td>
-					<td>... </td>
-				</tr>
-				<tr id="19h">
-					<td>19h </td>
-					<td>... </td>
-					<td bgcolor="red">...  </td> 
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">... </td>
-					<td bgcolor="red">...  </td> 
-					<td>... </td>
-					<td>... </td>
-				</tr>
-</table>
+			</div>
+	  <div class="form-group">
+       <button class="btn btn-primary col-10 col-sm-12" onclick="window.location.href = '../Planning/Planning.html';" >
+        Generer </button> 
+		</div>   
+	</form>
 	</body>
 </html>
