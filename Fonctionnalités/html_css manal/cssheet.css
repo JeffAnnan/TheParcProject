@@ -1,0 +1,62 @@
+  /*CSS enregistrer un contrat de maintenance*/
+
+  h1 {
+    text-align:center;
+    position: center;
+    font-family: "Arial";
+    color: green;
+    margin-right: 100px;
+
+  }
+  form {
+    text-align:justify;
+    font-family: "Arial";
+    margin-left: 400px;
+  }
+  div {
+    margin-left: 100px;
+    text-align:justify;
+  }
+  .button {
+    text-align:center;
+    display: inline;
+    margin-left: 50px;
+    height: 30px;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+   input{
+    display: block;
+	  width: 150px;
+	  float: right;
+
+  }
+    .border {
+    border-style: solid;
+    border-width: 3px;
+    padding-bottom:50px;
+  }
+  .buttoncenter{
+    position: center;
+  }
+
+
+  .textposition{
+    position: center;
+    text-align:center;
+    margin-right: 500px;
+  }
+  /*CSS consulter les contrats*/
+
+  nav{
+    text-align:center;
+    position: center;
+    font-family: "Arial";
+    margin-right: 100px;
+
+  }
+  p {
+    text-align: center;
+    position : center;
+    margin-left: 50px;
+  }
