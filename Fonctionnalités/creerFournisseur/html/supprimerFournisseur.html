@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>gestion fournisseur</title>
+  <link rel="stylesheet" type="text/css" href="css/maingerer.css">
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre.min.css">
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-exp.min.css">	
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-icons.min.css">
+</head>
+<body>
+  <button class="btn btn-error"> Retour </button>
+  <div class="col-7 col-mx-auto" id="all">
+    <div class="corner-ribbon top-right sticky blue"> Gestion Fournisseur</div>
+    <h1 class="col-11 col-mx-auto">Vous pouvez gerer un fournisseur ici</h1>
+    <form class="form-horizontal">
+    <div class="form-group">
+    <div class="col-6 col-sm-12">
+        <div class="form-group">
+            <div class="col-1 col-sm-12"></div>
+            <div class="col-3 col-sm-12">
+              <label class="form-label" for="input-example-1">Fournisseur *</label>
+            </div>
+            <div class="col-4 col-sm-12">
+                <select class="form-select">
+                    <option>selectionner</option>
+                    <option>DUFOUR Paul</option>
+                    <option>ENGIE</option>
+                    <option>APPLE</option>
+                    <option>BRACONIER</option>
+                  </select>
+            </div>
+          </div>
+    </div>
+    <div class="col-6 ">
+    <div class="form-group">
+       <button class="btn btn-primary col-10 col-sm-12" onclick="window.location.href = 'modifierFournisseur.html';" >
+        Modifier Ce fournisseur </button> 
+    </div>
+     <div class="form-group">
+       <button class="btn btn-primary col-10 col-sm-12"> Consulter Ce fournisseur</button> 
+    </div>
+     <div class="form-group">
+       <button class="btn btn-primary col-10 col-sm-12" onclick="window.location.href = 'supprimerClient.html';"> Supprimer Ce Fournisseur</button> 
+    </div>
+    </div>
+    </div>
+    
+    </form>
+      
+    
+  </div>
+  
+
+  
+  
+  
+</body>
+</html>
