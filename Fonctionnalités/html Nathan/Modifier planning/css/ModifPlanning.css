@@ -36,6 +36,17 @@ table, th, td {
 	margin-right: 15%;
 }
 
+.back{
+	background-image: url("../images/parc-min.jpg");
+	background-size: cover;
+	-webkit-animation: backgrounds 2s;
+	padding-bottom: 8%;
+}
+
+.label{
+	text:underline;
+}
+
 
 
 
