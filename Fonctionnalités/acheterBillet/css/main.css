@@ -1,0 +1,39 @@
+.all{
+  background-image: url("../images/black.png");
+  background-size: cover;
+ 	color: white;
+  padding-top: 3%;
+
+
+ 
+}
+.fill{
+  height: 200px;
+}
+#rect{
+	padding: 1%;
+	background-color: rgba(169, 169, 169, 0.65);
+}
+.modal{
+	color: black;
+}
+
+#title{
+	color: white;
+}
+
+.calendar-container{
+	background-color: black;
+}
+.calendar-header{
+	background-color: black;
+}
+.navbar-primary{
+	color: black;
+}
+
+
+
+
+
+

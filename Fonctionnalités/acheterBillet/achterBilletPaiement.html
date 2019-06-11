@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Acheter Billet</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre.min.css">
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-exp.min.css">	
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-icons.min.css">
+</head>
+<body>
+<div class="all">
+  
+  <div class="col-5 col-mx-auto" id="all">
+    <div class="etapes">
+      <ul class="step">
+      <li class="step-item">
+        <a href="#" class="tooltip" data-tooltip="Step 1">Votre choix</a>
+      </li>
+      <li class="step-item">
+        <a href="#" class="tooltip" data-tooltip="Step 2">Vos informations</a>
+      </li>
+      <li class="step-item active">
+        <a href="#" class="tooltip" data-tooltip="Step 3">Paiement</a>
+      </li>
+      </ul>
+    </div>
+   
+    <h1 class="col-4 col-mx-auto">Paiement</h1>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <div class="col-3 col-sm-12">
+          <label class="form-label" for="input-example-1">Nom de facturation </label>
+        </div>
+        <div class="col-9 col-sm-12">
+          <input class="form-input" type="text" id="input-example-1" placeholder="Nom">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-3 col-sm-12">
+          <label class="form-label" for="input-example-1">Adresse de facturation</label>
+        </div>
+        <div class="col-9 col-sm-12">
+         <input class="form-input" type="text" id="input-example-1" placeholder="Numéro de voie et rue">
+         <input class="form-input" type="text" id="input-example-1" placeholder="Ville">
+         <input class="form-input" type="text" id="input-example-1" placeholder="Code postal">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Mode de paiement :</label>
+        <label class="form-radio">
+          <input type="radio" name="gender" checked>
+          <i class="form-icon"></i> Carte
+        </label>
+        <label class="form-radio">
+          <input type="radio" name="gender">
+          <i class="form-icon"></i> Chèque (la réservation sera effectué)
+        </label>
+        <label class="form-radio">
+          <input type="radio" name="gender">
+          <i class="form-icon"></i> Payer au guichet (la réservation sera effectué)
+        </label>
+      </div>
+      <div class="form-group">
+        <div class="col-3 col-sm-12">
+          <label class="form-label" for="input-example-1">Numéro de carte </label>
+        </div>
+        <div class="col-9 col-sm-12">
+          <input class="form-input" type="text" id="input-example-1" placeholder="numéro ">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-3 col-sm-12">
+          <label class="form-label" for="input-example-1">Pictogramme</label>
+        </div>
+        <div class="col-9 col-sm-12">
+          <input class="form-input" type="text" id="input-example-1" placeholder="Pictogramme">
+        </div>
+      </div>
+      <hr>
+      <br>
+      <h2>Récapitulatif :</h2>
+      <h3> 1 entrée classique à 33€</h3>
+
+       
+     
+
+      <br>
+    </form>
+    <div class="columns">
+          <div class="column col-6">
+            <label class="form-checkbox form-inline">
+            <input type="checkbox"><i class="form-icon"></i> J'ai lu et accepté les conditions générales de ventes 
+          </label>
+          </div>
+          <div class="column col-6" id="desc">
+              <a class="btn btn-primary" href="#conditions">Consulter les conditions</a>
+          </div>
+    </div> 
+    <div class="modal" id="conditions">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5">Conditions générales de vente</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+
+                        <h4>Clause n° 1 : Objet</h4>
+                        <p>Les conditions générales de vente décrites ci-après détaillent les droits et obligations de la société ... (dénomination sociale) et de son client dans le cadre de la vente des marchandises suivantes : ... (le vendeur doit recenser les marchandises soumises aux CGV).
+Toute prestation accomplie par la société AnimaParc implique donc l'adhésion sans réserve de l'acheteur aux présentes conditions générales de vente.</p>
+                       
+                        <h4>Clause n° 2 : Prix</h4>
+                        <p>Les prix des marchandises vendues sont ceux en vigueur au jour de la prise de commande. Ils sont libellés en euros et calculés hors taxes. Par voie de conséquence, ils seront majorés du taux de TVA et des frais de transport applicables au jour de la commande.
+La société AnimaParc s'accorde le droit de modifier ses tarifs à tout moment. Toutefois, elle s'engage à facturer les marchandises commandées aux prix indiqués lors de l'enregistrement de la commande.</p>
+                       
+                        <h4>Clause n° 3 : Rabais et ristournes</h4>
+                        <p>La société AnimaParc est en droit d'accorder des réductions sur l'achat de billets</p>
+                        <h4>Clause n° 4 : Modalités de paiement</h4>
+                        <p>Le règlement des commandes s'effectue :
+soit par chèque ;
+soit par carte bancaire ;
+soit par tout autre mode de paiement usuel.</p>
+                       
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div> 
+    <div class="columns">
+          <div class="column col-6">
+             <button class="btn btn-error" onclick="window.location.href = '../acceuilSite/acceuilClient.html';">Annuler</button>
+          </div>
+          <div class="column col-6" id="desc">
+             <a class="btn btn-success" href="#success">Valider 
+
+             </a>
+          </div>
+    </div>  
+    <div class="modal" id="success">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5">Le paiement a bien été enregistré</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                        La réservation est effective
+                       
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" onclick="window.location.href = '../creerUnClient/web/gererClientEspaceClient/gererClientEspaceClient.html';">Vers l'Espace client</a>
+                      </button><a class="btn btn-link" onclick="window.location.href = '../acceuilSite/acceuilClient.html';">Aller au menu</a>
+                    </div>
+                  </div>
+    </div> 
+  </div>
+
+  <div class="fill">
+    
+  </div>
+  
+
+  
+</div> 
+  
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+.all{
+  background-image: url("../images/black.png");
+  background-size: cover;
+  color: white;
+  padding-top: 3%;
+}
+.fill{
+  height: 500px;
+}
+#desc{
+  text-align: justify; 
+  font-size: 25px; 
+}
+
+button{
+  width: 70%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

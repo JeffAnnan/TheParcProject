@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>consulter les statistiques</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre.min.css">
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-exp.min.css">	
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-icons.min.css">
+</head>
+<body>
+<div class="all">
+  
+  <div class="col-7 col-mx-auto" id="all">
+   
+    <div class="col-10 col-mx-auto" id="title">
+      <h1>Voici les statistiques du parc</h1>
+    </div>
+
+    <br>
+    
+
+    <div class="columns" id="rect">
+          <div class="column col-9">
+            <h3>Nombre d'entrées - 2019 :</h3>
+             <img src="images/2019.png" id="img"> 
+          </div>
+          <div class="column col-3">
+            <label class="form-label">Choisir une période</label>
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <i class="form-icon"></i> Une date
+            </label>
+            <input class="form-input" type="text" id="input-example-19" placeholder="jj/mm/aaaa">
+            <a class="btn btn-primary" href="#dateSeul">Voir</a>
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <i class="form-icon"></i> Une année seule
+            </label>
+        
+            <select class="form-select" id="col">
+              <option>Choisir l'année</option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+            </select>
+    
+            <a class="btn btn-primary" href="#anneeSeul">Voir</a>
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <i class="form-icon"></i> Une année complète
+            </label>
+             <select class="form-select" id="col">
+              <option>Choisir l'année</option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+            </select>
+            <a class="btn btn-primary" href="#anneeComp">Voir</a>
+            <br>
+            <br>
+            <a class="btn btn-primary" href="#eR">Voir en temps réel</a>
+          </div>
+    </div>
+    <div class="modal" id="dateSeul">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5"> Le 15/01/2018 : visiteurs</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         <img src="images/jourOnly.png"> 
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div> 
+    <div class="modal" id="anneeSeul">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5"> En 2017 : visiteurs</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         <img src="images/2017Only.png"> 
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div>
+    <div class="modal" id="anneeComp">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5"> 2018</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         <img src="images/2018.png"> 
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div>  
+    <div class="modal" id="eR">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5"> Maintenant dans le parc</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         <img src="images/nowReal.png"> 
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div>  
+
+    <br>
+
+    <div class="columns" id="rect">
+          <div class="column col-9">
+            <h3>Age des visiteurs - 2019 :</h3>
+             <img src="images/ageNowMois.png" id="imgA"> 
+          </div>
+          <div class="column col-3">
+            <label class="form-label">Choisir une période</label>
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <i class="form-icon"></i> Une date
+            </label>
+            <input class="form-input" type="text" id="input-example-19" placeholder="jj/mm/aaaa">
+            <a class="btn btn-primary" href="#dateSeulA">Voir</a>
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <i class="form-icon"></i> Pour un mois (moyenne)
+            </label>
+        
+            <select class="form-select" id="col">
+              <option>Choisir le mois</option>
+              <option>Janvier</option>
+              <option>Février</option>
+              <option>Mars</option>
+              <option>Avril</option>
+              <option>Mai</option>
+              <option>Juin</option>
+              <option>Juillet</option>
+              <option>Août</option>
+              <option>Septembre</option>
+              <option>Octobre</option>
+              <option>Novembre</option>
+              <option>Décembre</option>
+            </select>
+            <select class="form-select" id="col">
+              <option>Choisir l'année</option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+            </select>
+    
+            <a class="btn btn-primary" href="#mois">Voir</a>
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <i class="form-icon"></i> Pour une année (moyenne)
+            </label>
+             <select class="form-select" id="col">
+              <option>Choisir l'année</option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+            </select>
+            <a class="btn btn-primary" href="#anneeCompA">Voir</a>
+            <br>
+            <br>
+            <a class="btn btn-primary" href="#aR">Voir en temps réel</a>
+          </div>
+    </div>
+    <div class="modal" id="dateSeulA">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5"> Le 15/01/2018</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         <img src="images/ageJourOnly.png"> 
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div> 
+    <div class="modal" id="mois">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5">Juillet 2017</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         <img src="images/ageMoisOnly.png"> 
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div>
+    <div class="modal" id="anneeCompA">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5"> 2018</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         <img src="images/ageAnneeOnly.png"> 
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div> 
+    <div class="modal" id="aR">
+      <a class="modal-overlay" href="#aR" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5"> Maintenant dans le parc</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         <img src="images/ageAnneeOnly.png"> 
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div>
+
+    <br>
+
+
+     <div class="columns" id="rect">
+          <div class="column col-9">
+            <h3>Taux de satisfaction - 2019 :</h3>
+            90%
+            <progress class="progress" id="haut" value="91" max="100"> 
+          <br> 
+          </div>
+          <div class="column col-3">
+            <label class="form-label">Choisir une période</label>
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <i class="form-icon"></i> Une date
+            </label>
+            <input class="form-input" type="text" id="input-example-19" placeholder="jj/mm/aaaa">
+            <a class="btn btn-primary" href="#satDate">Voir</a>
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <i class="form-icon"></i> Pour un mois
+            </label>
+        
+            <select class="form-select" id="col">
+              <option>Choisir le mois</option>
+              <option>Janvier</option>
+              <option>Février</option>
+              <option>Mars</option>
+              <option>Avril</option>
+              <option>Mai</option>
+              <option>Juin</option>
+              <option>Juillet</option>
+              <option>Août</option>
+              <option>Septembre</option>
+              <option>Octobre</option>
+              <option>Novembre</option>
+              <option>Décembre</option>
+            </select>
+            <select class="form-select" id="col">
+              <option>Choisir l'année</option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+            </select>
+    
+            <a class="btn btn-primary" href="#satMois">Voir</a>
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <i class="form-icon"></i> Pour une année
+            </label>
+             <select class="form-select" id="col">
+              <option>Choisir l'année</option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+            </select>
+            <a class="btn btn-primary" href="#satAnnee">Voir</a>
+            <br>
+            <br>
+            <a class="btn btn-primary" href="#satR">Voir en temps réel</a>
+          </div>
+    </div>
+    <div class="modal" id="satDate">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5"> Le 15/01/2018</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         91%
+            <progress class="progress" id="haut" value="91" max="100">  
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div> 
+    <div class="modal" id="satMois">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5">Juillet 2017</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         95%
+            <progress class="progress" id="haut" value="95" max="100">   
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div>
+    <div class="modal" id="satAnnee">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5"> 2018</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         88%
+            <progress class="progress" id="haut" value="88" max="100">  
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div> 
+    <div class="modal" id="satR">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5"> Maintenant dans le parc</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                        
+                         84%
+            <progress class="progress" id="haut" value="84" max="100">  
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div>
+
+
+    <br>
+
+    <div class="columns" id="rect">
+          <div class="column col-9">
+            <h3>Nationalités - 2019 :</h3>
+             <img src="images/pnow.png" id="imgA"> 
+          </div>
+          <div class="column col-3">
+            <label class="form-label">Choisir une période</label>
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <i class="form-icon"></i> Une date
+            </label>
+            <input class="form-input" type="text" id="input-example-19" placeholder="jj/mm/aaaa">
+            <a class="btn btn-primary" href="#nDate">Voir</a>
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <i class="form-icon"></i> Pour un mois (moyenne)
+            </label>
+        
+            <select class="form-select" id="col">
+              <option>Choisir le mois</option>
+              <option>Janvier</option>
+              <option>Février</option>
+              <option>Mars</option>
+              <option>Avril</option>
+              <option>Mai</option>
+              <option>Juin</option>
+              <option>Juillet</option>
+              <option>Août</option>
+              <option>Septembre</option>
+              <option>Octobre</option>
+              <option>Novembre</option>
+              <option>Décembre</option>
+            </select>
+            <select class="form-select" id="col">
+              <option>Choisir l'année</option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+            </select>
+    
+            <a class="btn btn-primary" href="#nMois">Voir</a>
+            <label class="form-radio">
+              <input type="radio" name="gender">
+              <i class="form-icon"></i> Pour une année (moyenne)
+            </label>
+             <select class="form-select" id="col">
+              <option>Choisir l'année</option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+            </select>
+            <a class="btn btn-primary" href="#nAnnee">Voir</a>
+            <br>
+            <br>
+            <a class="btn btn-primary" href="#nR">Voir en temps réel</a>
+          </div>
+    </div>
+    <div class="modal" id="nDate">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5"> Le 15/01/2018</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         <img src="images/pjour.png"> 
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div> 
+    <div class="modal" id="nMois">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5">Juillet 2017</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         <img src="images/pmois.png"> 
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div>
+    <div class="modal" id="nAnnee">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5"> 2018</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         <img src="images/pannee.png"> 
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div>
+    <div class="modal" id="nR">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5"> Maintenant dans le parc</div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="content">
+                         <img src="images/pannee.png"> 
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                    </div>
+                  </div>
+    </div>
+
+
+    <br>
+
+
+
+
+
+
+
+
+    <div class="columns" id="rect">
+          <div class="column col-6">
+            <h3>En temps réel : </h3>
+            le 11/06/2018 à 11:45:21
+            <br>
+          <kbd class="kbd">170</kbd> entrées
+          <br>
+          <br>
+          <kbd class="kbd">90</kbd> couverts au restaurant central
+
+           
+          </div>
+          <div class="column col-6">
+            
+          
+        
+          </div>
+    </div>
+     
+
+    <br>
+
+    <div class="col-1 col-mx-auto">
+      <button class="btn btn-error" onclick="window.location.href = '..';">Retour
+      </button>
+    </div>
+    
+
+
+
+  </div>
+  <div class="fill">
+      
+  </div>
+
+</div>
+
+ 
+
+  
+
+  
+</div> 
+</body>
+</html>

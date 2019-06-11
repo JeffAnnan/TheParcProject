@@ -4,8 +4,16 @@
 }
 	
 #all{
-
+height:650px;
 }
+
+.back{
+	background-image: url("../images/parc-min.jpg");
+	background-size: cover;
+	-webkit-animation: backgrounds 2s;
+	padding-bottom: 8%;
+}
+
 
 table, th, td {
 	margin-top : 2%;

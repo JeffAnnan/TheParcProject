@@ -22,13 +22,20 @@
 }
 
 #all{
-
+height:650px;
 }
 .btn{
 	width: 70%;
 	margin-top: 20%;
 	margin-left: 15%;
 	margin-right: 15%;
+}
+
+.back{
+	background-image: url("../images/parc-min.jpg");
+	background-size: cover;
+	-webkit-animation: backgrounds 2s;
+	padding-bottom: 8%;
 }
 
 

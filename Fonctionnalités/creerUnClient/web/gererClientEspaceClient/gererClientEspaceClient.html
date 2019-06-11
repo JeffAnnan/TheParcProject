@@ -2,35 +2,98 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Gérer Client / Espace Client</title>
+  <title>Espace Client</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre.min.css">
   <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-exp.min.css">	
   <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-icons.min.css">
 </head>
 <body>
-  <button class="btn btn-error">X Se déconnecter </button>
-  <div class="col-7 col-mx-auto" id="all">
-    <div class="corner-ribbon top-right sticky blue"> Gérer Client</div>
-    <h1 class="col-10 col-mx-auto">Bonjour M. Dubreuil, voici votre espace</h1>
-    <div class="form-group">
-       <button class="btn btn-primary col-10 col-sm-12" onclick="window.location.href = '../modifierClient/modifierClient.html';" >
-        Modifier mon profil </button> 
-    </div>
-     <div class="form-group">
-       <button class="btn btn-primary col-10 col-sm-12"> Consulter mes billets et achats</button> 
-    </div>
-     <div class="form-group">
-       <button class="btn btn-primary col-10 col-sm-12" onclick="window.location.href = '../supprimerClient/supprimerClient.html';"> Supprimer mon compte</button> 
-    </div>
-      
-      
-    
-  </div>
+<div class="all">
   
 
+  <button class="btn btn-error" onclick="window.location.href = '../../../acceuilSite/acceuilClient.html';">X Se déconnecter </button>
+  <div class="col-8 col-mx-auto" id="all">
+    
+    <h1 class="col-111 col-mx-auto">Bonjour M. Dubreuil, voici votre espace client</h1>
+
+    <br>
+
+    
+        
+       <button class="btn btn-primary col-10 col-sm-12" onclick="window.location.href = '../modifierClient/modifierClient.html';" >
+        Modifier mon profil </button> 
+
+        <br>
+        <br>
+
+     
+       <button class="btn btn-primary col-10 col-sm-12"> Consulter mes billets et réservations</button> 
+    
+        <br>
+        <br>
+   
+       <button class="btn btn-primary col-10 col-sm-12" onclick="window.location.href = '../supprimerClient/supprimerClient.html';"> Supprimer mon compte</button> 
+
+        <br>
+        <br>
+
+       <a class="btn btn-primary col-10 col-sm-12" href="#avis"> Votre avis nous intéresse</a> 
+    
+        <br>
+        <br>
+      <div class="modal" id="avis">
+      <a class="modal-overlay" href="#modals" aria-label="Close"></a>
+                  <div class="modal-container" role="document">
+                    <div class="modal-header"><a class="btn btn-clear float-right" href="#modals" aria-label="Close"></a>
+                      <div class="modal-title h5">Laissez nous vos impressions</div>
+                    </div>
+                    <div class="modal-body">
+                      <label class="form-label"><b>A propos de votre expérience dans le parc</b></label>
+                      <label class="form-radio">
+                        <input type="radio" name="gender">
+                        <i class="form-icon"></i> Satisfait(e)
+                      </label>
+                      <label class="form-radio">
+                        <input type="radio" name="gender">
+                        <i class="form-icon"></i> Moyennement satisfait(e)
+                      </label>
+                      <label class="form-radio">
+                        <input type="radio" name="gender">
+                        <i class="form-icon"></i> Non satisfait(e)
+                      </label>
+                      <label class="form-label" for="input-example-20">Message</label>
+      <textarea class="form-input" id="input-example-20" placeholder="A propos du parc" rows="3"></textarea>
+
+                      <label class="form-label"><b>A propos de votre expérience sur notre site</b></label>
+                      <label class="form-radio">
+                        <input type="radio" name="gender">
+                        <i class="form-icon"></i> Satisfait(e)
+                      </label>
+                      <label class="form-radio">
+                        <input type="radio" name="gender">
+                        <i class="form-icon"></i> Moyennement satisfait(e)
+                      </label>
+                      <label class="form-radio">
+                        <input type="radio" name="gender">
+                        <i class="form-icon"></i> Non satisfait(e)
+                      </label>
+                       <label class="form-label" for="input-example-20">Message</label>
+      <textarea class="form-input" id="input-example-20" placeholder="A propos du site internet" rows="3"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                      </button><a class="btn btn-link" href="#modals">Fermer</a>
+                      </button><a class="btn btn-link" href="#modals">Valider</a>
+                    </div>
+                  </div>
+    </div>
   
-  
-  
+  </div>
+
+  <div class="fill">
+    
+  </div>
+   
+</div> 
 </body>
 </html>
