@@ -1,5 +1,14 @@
 #all{
+  height: 650px;
+  font-weight: bold;
+}
 
+
+.back{
+	background-image: url("ours.jpg");
+	background-size: cover;
+	-webkit-animation: backgrounds 2s;
+	padding-bottom: 8%;
 }
 .btn.btn-error{
   position: absolute;
