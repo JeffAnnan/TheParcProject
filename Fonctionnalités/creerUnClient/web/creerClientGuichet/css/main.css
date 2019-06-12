@@ -1,0 +1,29 @@
+#all{
+  background-color: rgba(169, 169, 169, 0.77);
+  padding: 1%;
+}
+.all{
+  background-image: url("../images/black.png");
+  background-size: cover;
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 3%;
+ 
+}
+.btn{
+	width: 70%;
+	margin-top: 20%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+#condCode{
+  color: black;
+}
+
+
+
+
+
+
+
