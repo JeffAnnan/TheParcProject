@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>créer un offre commerciale</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre.min.css">
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-exp.min.css">	
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-icons.min.css">
+</head>
+<body>
+<div class="all">
+
+
+  <div class="col-8 col-mx-auto" id="all">
+    
+    <h1 class="col-7 col-mx-auto" id="title">Créer une offre commerciale</h1>
+    <br>
+
+    <div class="columns" id="rect">
+          <div class="column col-5">
+            <h3>Période :</h3>
+          </div>
+          <div class="column col-6">
+          	<h3>Sélectionnez une date unique ou une plage de dates</h3>
+             <div class="calendar" id="locateAndDate">
+        <!-- calendar navbar -->
+        <div class="calendar-nav navbar">
+          <button class="btn btn-action btn-link btn-lg">
+            <i class="icon icon-arrow-left"></i>
+          </button>
+          <div class="navbar-primary">Juin 2019</div>
+            <button class="btn btn-action btn-link btn-lg">
+              <i class="icon icon-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="calendar-container">
+          <div class="calendar-header">
+            <div class="calendar-date">Lun</div>
+            <div class="calendar-date">Mar</div>
+            <div class="calendar-date">Mer</div>
+            <div class="calendar-date">Jeu</div>
+            <div class="calendar-date">Ven</div>
+            <div class="calendar-date">Sam</div>
+            <div class="calendar-date">Dim</div>
+          </div>
+
+          <div class="calendar-body">
+            <!-- calendar previous month -->
+            <div class="calendar-date prev-month">
+              <button class="date-item">27</button>
+            </div>
+            <div class="calendar-date prev-month">
+              <button class="date-item">28</button>
+            </div>
+            <div class="calendar-date prev-month">
+              <button class="date-item">29</button>
+            </div>
+            <div class="calendar-date prev-month">
+              <button class="date-item">30</button>
+            </div>
+            <div class="calendar-date prev-month">
+              <button class="date-item">31</button>
+            </div>
+
+            <!-- calendar current month -->
+            <div class="calendar-date">
+              <button class="date-item">1</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">2</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">3</button>
+            </div>
+            <!-- calendar date: tooltip -->
+            <div class="calendar-date tooltip" data-tooltip="Today">
+              <button class="date-item date-today">4</button>
+            </div>
+            <!-- calendar date: not available -->
+            <div class="calendar-date">
+              <button class="date-item">5</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">6</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">7</button>
+            </div>
+            <div class="calendar-date " >
+              <button class="date-item">8</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">9</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">10</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">11</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">12</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">13</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">14</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">15</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">16</button>
+            </div>
+            <div class="calendar-date calendar-range range-start">
+              <button class="date-item ">17</button>
+            </div>
+            <div class="calendar-date calendar-range">
+              <button class="date-item">18</button>
+            </div>
+            <div class="calendar-date calendar-range">
+              <button class="date-item">19</button>
+            </div>
+            <div class="calendar-date calendar-range">
+              <button class="date-item">20</button>
+            </div>
+            <div class="calendar-date calendar-range">
+              <button class="date-item">21</button>
+            </div>
+            <div class="calendar-date calendar-range">
+              <button class="date-item">22</button>
+            </div>
+            <div class="calendar-date calendar-range">
+              <button class="date-item">23</button>
+            </div>
+            <div class="calendar-date calendar-range range-end">
+              <button class="date-item">24</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">25</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">26</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">27</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">28</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">29</button>
+            </div>
+            <div class="calendar-date">
+              <button class="date-item">30</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <br>
+   
+    <div class="columns" id="rect">
+        <div class="column col-4">
+          <h3>Personnes concernées :</h3>
+        </div>
+        <div class="column col-6">
+        	<form class="form-horizontal">
+  				<div class="form-group">
+      				<label class="form-label" for="input-example-1">Age : entre &nbsp;</label>
+   					
+     				<input class="form-input" type="text" id="input-example-1" placeholder="20">
+    				
+    				<label class="form-label" for="input-example-1">&nbsp;et&nbsp;</label>
+
+    				<input class="form-input" type="text" id="input-example-1" placeholder="30">
+
+    				<label class="form-label" for="input-example-1">&nbsp;ans</label>
+  				</div>
+  				<div class="form-group">
+      				<label class="form-label" for="input-example-1">Possède un compte client ou est enregistré dasn le sytème depuis :&nbsp;</label>
+   					
+     				<input class="form-input" type="text" id="input-example-1" placeholder="15/02/2005">
+    	
+  				</div>
+  				<div class="form-group">
+      				<label class="form-label" for="input-example-1">Code postal d'habitation :&nbsp;</label>
+
+  				</div>
+  				 <label class="form-checkbox">
+			    <input type="checkbox">
+			    <i class="form-icon"></i> Tous
+			  	</label>
+  				<input class="form-input" type="text" id="input-example-1" placeholder="87000">
+     				<input class="form-input" type="text" id="input-example-1" placeholder="23000">
+     				<input class="form-input" type="text" id="input-example-1" placeholder="33000">
+     				<input class="form-input" type="text" id="input-example-1" placeholder="">
+     			<div class="form-group">
+      				<label class="form-label" for="input-example-1">Ajouter la règle de fidélisation :&nbsp;</label>
+
+      				<div class="form-group">
+				      <select class="form-select">
+				      	<option>Sélectionnez une règle</option>
+				        <option>grandsFidèles</option>
+				        <option>toutNouveaux</option>
+				        <option>réguliers</option>
+				       
+				      </select>
+
+				    </div>
+
+
+  				</div>
+  				<label class="form-label" for="input-example-1">Aperçu de la règle sélectionnée :&nbsp; -a déjà visté 6x le parc cette année; -a déjà passé 2 jours consécutifs dans le parc</label>
+
+  				<div class="form-group">
+      				<label class="form-label" for="input-example-1">Concerne tous les prospects : (si oui une offre sera envoyé à tous les propects) &nbsp;</label>
+
+      				<div class="form-group">
+					  <label class="form-radio">
+					    <input type="radio" name="gender" checked>
+					    <i class="form-icon"></i> Oui
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" name="gender">
+					    <i class="form-icon"></i> Non
+					  </label>
+					</div>
+
+
+  				</div>
+
+			</form>
+  
+        </div>
+    </div>
+
+    <br>
+
+    <div class="columns" id="rect">
+        <div class="column col-4">
+          <h3>Avantages :</h3>
+        </div>
+        <div class="column col-6">
+        	<form class="form-horizontal">
+  				<div class="form-group">
+      				<label class="form-label" for="input-example-1">Rabais : -</label>
+   					
+     				<input class="form-input" type="text" id="input-example-1" placeholder="20">
+    				
+    				<label class="form-label" for="input-example-1">%</label>
+
+    				<label class="form-label" for="input-example-1">&nbsp;sur&nbsp;</label>
+
+    				<div>
+					  <label class="form-radio">
+					    <input type="radio" name="gender" checked>
+					    <i class="form-icon"></i> chaque place achetée
+					  </label>
+					  <label class="form-radio">
+					    <input type="radio" name="gender">
+					    <i class="form-icon"></i>
+					  </label>
+					  <input class="form-input" type="text" id="input-example-1" placeholder="3">
+					  <label class="form-label" for="input-example-1">&nbsp;places</label>
+					</div>
+  				</div>
+
+			</form>
+  
+        </div>
+    </div>
+
+     <div class="columns" id="rect">
+        <div class="column col-4">
+          <h3>Notifications :</h3>
+        </div>
+        <div class="column col-6">
+        	<div class="form-group">
+			  <label class="form-checkbox">
+			    <input type="checkbox">
+			    <i class="form-icon"></i> email
+			  </label>
+			  <label class="form-checkbox">
+			    <input type="checkbox">
+			    <i class="form-icon"></i> SMS
+			  </label>
+			  <label class="form-checkbox">
+			    <input type="checkbox">
+			    <i class="form-icon"></i> lors de l'achat
+			  </label>
+			  <label class="form-checkbox">
+			    <input type="checkbox">
+			    <i class="form-icon"></i> lors de la connexion au compte
+			  </label>
+			</div>
+        	
+        </div>
+
+
+          <div class="column col-4">
+          <h3>Descritpion :</h3>
+        </div>
+         <textarea class="form-input" id="input-example-20" placeholder="Vous avez entre 20 et 30 ans venez profiter de -20 % sur chaque place achetée" rows="3" ></textarea>
+    </div>
+    
+    <hr>
+
+    <div class="columns">
+          <div class="column col-6">
+             <button class="btn btn-error" onclick="window.location.href = 'consulterLesOffresAdministration.html';">Annuler</button>
+          </div>
+          <div class="column col-6">
+            <button class="btn btn-success" onclick="window.location.href = 'consulterLesOffresAdministration.html';">Modifier</button>
+
+          </div>
+    </div>  
+     
+    <br>
+
+  </div>
+  <div class="fill">
+    
+  </div>
+  
+
+  
+  
+</div>
+</body>
+</html>

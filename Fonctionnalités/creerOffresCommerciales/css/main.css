@@ -1,0 +1,48 @@
+.all{
+  background-image: url("../images/black.png");
+  background-size: cover;
+ 
+  padding-top: 3%;
+ 
+}
+#title{
+	color: white;
+}
+
+.card{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: ;
+}
+
+
+#connexion{
+	position: absolute;
+	margin-top: 2%;
+	margin-right: 5%;
+}
+.fill{
+  height: 200px;
+}
+#rect{
+  padding: 1%;
+  background-color: rgba(250, 250, 250, 0.80);
+  
+}
+.calendar-container{
+  background-color: white;
+}
+.navbar-primary{
+  color: black;
+}
+#input-example-1{
+  width: 120px;
+
+}
+.fillplus{
+  height: 600px;
+}
+
+
+
+
+
