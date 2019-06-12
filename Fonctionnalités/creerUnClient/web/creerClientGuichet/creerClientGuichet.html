@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>créer un client</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre.min.css">
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-exp.min.css">	
+  <link rel="stylesheet" href="css/spectre-0.5.8/dist/spectre-icons.min.css">
+</head>
+<body>
+<div class="all">
+  
+  <div class="col-7 col-mx-auto" id="all">
+  
+    <h1 class="col-10 col-mx-auto">Saisissez les informations client</h1>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <div class="col-3 col-sm-12">
+          <label class="form-label" for="input-example-1">Nom *</label>
+        </div>
+        <div class="col-9 col-sm-12">
+          <input class="form-input" type="text" id="input-example-1" placeholder="Nom">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-3 col-sm-12">
+          <label class="form-label" for="input-example-1">Prenom *</label>
+        </div>
+        <div class="col-9 col-sm-12">
+         <input class="form-input" type="text" id="input-example-1" placeholder="Prenom">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-3 col-sm-12">
+          <label class="form-label" for="input-example-1">Civilité *</label>
+        </div>
+        <select class="form-select col-9 col-sm-12">
+          <option>M</option>
+          <option>Mme</option>
+          <option>Mlle</option>
+        </select>
+      </div>
+   
+      <div class="form-group">
+        <div class="col-3 col-sm-12">
+          <label class="form-label" for="input-example-1">Code postal *</label>
+        </div>
+        <div class="col-9 col-sm-12">
+        
+         <input class="form-input" type="text" id="input-example-1" placeholder="Code postal">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-6 col-sm-12">
+          <div class="col-3 col-sm-12">
+            <label class="form-label" for="input-example-1">Téléphone *</label>
+          </div>
+          <div class="col-11 col-sm-12">
+            <input class="form-input" type="text" id="input-example-1" placeholder="Téléphone">
+          </div>
+        </div>
+        <div class="col-6 col-sm-12">
+          <div class="col-3 col-sm-12">
+            <label class="form-label" for="input-example-1">Mobile *</label>
+          </div>
+          <div class="col-12 col-sm-12">
+            <input class="form-input" type="text" id="input-example-1" placeholder="Mobile">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-3 col-sm-12">
+          <label class="form-label" for="input-example-1">Adresse email</label>
+        </div>
+        <div class="col-9 col-sm-12">
+         <input class="form-input" type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,14}$"> 
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-9 col-sm-12">
+          <label class="form-checkbox form-inline">
+            <input type="checkbox"><i class="form-icon"></i> Le client souhaite recevoir des informations promotionnelles et/ou commerciales.
+          </label>
+        </div>
+        <div class="col-3 col-sm-12">
+          <select class="form-select">
+          <option>Par email</option>
+          <option>Par SMS</option>
+          <option>Les deux</option>
+        </select>
+        </div>
+      </div>
+      * saisie obligatoire
+    </form>
+
+
+    <div class="columns">
+          <div class="column col-6">
+             <button class="btn btn-error" onclick="window.location.href = '../../../acceuilSite/accueilEmployer.html';">Annuler</button>
+          </div>
+          <div class="column col-6" id="desc">
+             <button class="btn btn-success" onclick="window.location.href = '../../../acceuilSite/accueilEmployer.html';">Valider 
+
+             </button>
+          </div>
+    </div>  
+
+
+  </div>
+  
+
+  
+</div>  
+  
+</body>
+</html>
