@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Gestion d'un parc animalier" company="IUT GUILLEMETEAU MANAL MAINGOUTAUD ANNAN" webLink="http://" view-date="2019-01-25" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.10" locale="fr">
+<?xml version="1.0" encoding="UTF-8"?><project name="Gestion d'un parc animalier" company="IUT GUILLEMETEAU MANAL MAINGOUTAUD ANNAN" webLink="http://" view-date="2019-06-04" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.10" locale="fr_FR">
     <description><![CDATA[Projet de gestion d'un parc animalier : 
 - gestion clients
 - gestion du parc
@@ -103,11 +103,11 @@
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
         <task id="5" name="Note de lancement" color="#8cb6ce" meeting="true" start="2019-01-29" duration="0" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true"/>
-        <task id="0" name="Cahier des charges" color="#8cb6ce" meeting="false" start="2019-01-30" duration="43" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true"/>
-        <task id="4" name="Remise Client Cahier des charges" color="#8cb6ce" meeting="true" start="2019-04-01" duration="0" complete="0" thirdDate="2019-04-01" thirdDate-constraint="0" expand="true"/>
-        <task id="7" name="Conception Enregistrer les horaires" color="#8cb6ce" meeting="false" start="2019-04-01" duration="39" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true"/>
-        <task id="8" name="Conception Mettre à jour les stocks" color="#8cb6ce" meeting="false" start="2019-04-01" duration="39" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true"/>
-        <task id="9" name="Conception Enregistrer les horaires" color="#8cb6ce" meeting="false" start="2019-04-01" duration="39" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true"/>
+        <task id="0" name="Cahier des charges" color="#8cb6ce" meeting="false" start="2019-01-30" duration="91" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true"/>
+        <task id="4" name="Remise Client Cahier des charges" color="#8cb6ce" meeting="true" start="2019-06-12" duration="0" complete="0" thirdDate="2019-04-01" thirdDate-constraint="0" expand="true"/>
+        <task id="7" name="Conception Enregister une intervention" color="#8cb6ce" meeting="false" start="2019-06-13" duration="27" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true"/>
+        <task id="8" name="Conception Créer Planning" color="#8cb6ce" meeting="false" start="2019-06-13" duration="27" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true"/>
+        <task id="9" name="Conception Inscription" color="#8cb6ce" meeting="false" start="2019-06-13" duration="27" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="GUILLEMETEAU Hippolyte" function="Default:1" contacts="" phone=""/>
